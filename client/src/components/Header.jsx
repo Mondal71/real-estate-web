@@ -26,7 +26,7 @@ export default function Header() {
             <li className="text-blue-800 hover:underline">SignIn</li>
           </Link>
         </ul>
-        <form className="flex items-center bg-blue-100 p-2 rounded-lg">
+        <form className="flex items-center bg-blue-100 p-3 rounded-lg">
           <input
             type="text"
             placeholder="Search..."
