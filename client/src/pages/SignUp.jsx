@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import OAuth from "../components/OAuth";
 
 export default function SignUp() {
   const [formData, setformData] = useState({})
@@ -48,16 +49,7 @@ export default function SignUp() {
           </h2>
 
           {/* Google Button */}
-          <button className="w-full flex items-center justify-center gap-3 border border-gray-300 rounded-xl py-2 hover:bg-blue-50 transition mb-4">
-            <img
-              src="https://www.svgrepo.com/show/475656/google-color.svg"
-              alt="Google"
-              className="w-5 h-5"
-            />
-            <span className="text-sm text-gray-700 font-medium">
-              Continue with Google
-            </span>
-          </button>
+          <OAuth></OAuth>
 
           {/* Divider */}
           <div className="flex items-center justify-center mb-4">
